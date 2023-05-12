@@ -15,5 +15,9 @@ public class CharacterAnimate : MonoBehaviour
     private void Update()
     {
         animator.SetBool("Moving", agent.velocity.magnitude > 0.1f);
+        if(agent.velocity.magnitude > 0.1f)
+        {
+            print("now moving");
+       }
     }
 }
